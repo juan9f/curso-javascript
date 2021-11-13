@@ -8,141 +8,72 @@
 </head>
 <body>
     <script>
-        const edad1 = 10
-        const edad2 = 20
-        const edad3 = 18
-        const edad4 = 1
-        const edad5 = 58
+        //Ejercicios CourseIt
+        //Funciones
 
-<<<<<<< HEAD
-            function chequearEdad(age) {
-                if (age >= 18) {
-            console.log("puede entrar ")
-             } else {
-                 console.log(`no puede entrar`)
-             }
+        //Hacer una función que devuelva la suma de dos números
 
-            }
-        
 
-            chequearEdad(edad1)
-            chequearEdad(edad2)
-            chequearEdad(edad3)
-            chequearEdad(edad4)
-            chequearEdad(edad5)
-=======
-       console.log(`De una lista de 10 numeros, se imprimiran si son par o impar`)
+        const num1= 15
+        const num2= 20
 
-       if (numeros [0] % 2 === 0) {
-           console.log(`el numero ${numeros[0]} es par`)
-       } else console.log(`el numero ${numeros[0]} es impar`)
-       if (numeros [1] % 2 === 0) {
-           console.log(`el numero ${numeros[1]} es par`)
-       } else console.log(`el numero ${numeros[1]} es impar`)
-       if (numeros [2] % 2 === 0) {
-           console.log(`el numero ${numeros[2]} es par`)
-       } else console.log(`el numero ${numeros[2]} es impar`)
-       if (numeros [3] % 2 === 0) {
-           console.log(`el numero ${numeros[3]} es par`)
-       } else console.log(`el numero ${numeros[3]} es impar`)
-       if (numeros [4] % 2 === 0) {
-           console.log(`el numero ${numeros[4]} es par`)
-       } else console.log(`el numero ${numeros[4]} es impar`)
-       if (numeros [5] % 2 === 0) {
-           console.log(`el numero ${numeros[5]} es par`)
-       } else console.log(`el numero ${numeros[5]} es impar`)
-       if (numeros [6] % 2 === 0) {
-           console.log(`el numero ${numeros[6]} es par`)
-       } else console.log(`el numero ${numeros[6]} es impar`)
-       if (numeros [7] % 2 === 0) {
-           console.log(`el numero ${numeros[7]} es par`)
-       } else console.log(`el numero ${numeros[7]} es impar`)
-       if (numeros [8] % 2 === 0) {
-           console.log(`el numero ${numeros[8]} es par`)
-       } else console.log(`el numero ${numeros[8]} es impar`)
-       if (numeros [9] % 2 === 0) {
-           console.log(`el numero ${numeros[9]} es par`)
-       } else console.log(`el numero ${numeros[9]} es impar`)
-     
+        function sumarNumeros (suma) {
+            total = num1 + num2
+            console.log(total)
+        }
 
-       const numeros2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+        sumarNumeros(num1, num2)
 
-       console.log(`De una lista de 20 numeros, se imprimiran solo los multiplos de 3 o 5:`)
+        //Hacer una función que reciba como parámetro un número
+        // e imprima si es par o impar
 
-       if ( numeros2[0] % 3 === 0 || numeros2[0] %5 === 0) {
-           console.log(numeros2[0]);
-       } 
-       if (numeros2[1] % 3 === 0 || numeros2[1] %5 === 0) {
-           console.log(numeros2[1]);
-       } 
-       if (numeros2[2] % 3 === 0 || numeros2[2] %5 === 0) {
-           console.log(numeros2[2]);
-       } 
-       if (numeros2[3] % 3 === 0 || numeros2[3] %5 === 0) {
-           console.log(numeros2[3]);
-       } 
-       if (numeros2[4] % 3 === 0 || numeros2[4] %5 === 0) {
-           console.log(numeros2[4]);
-       } 
-       if (numeros2[5] % 3 === 0 || numeros2[5] %5 === 0) {
-           console.log(numeros2[5]);
-       } 
-       if (numeros2[6] % 3 === 0 || numeros2[6] %5 === 0) {
-           console.log(numeros2[6]);
-       } 
-       if (numeros2[7] % 3 === 0 || numeros2[7] %5 === 0) {
-           console.log(numeros2[7]);
-       } 
-       if (numeros2[8] % 3 === 0 || numeros2[8] %5 === 0) {
-           console.log(numeros2[8]);
-       } 
-       if (numeros2[9] % 3 === 0 || numeros2[9] %5 === 0) {
-           console.log(numeros2[9]);
-       } 
-       if (numeros2[10] % 3 === 0 || numeros2[10] %5 === 0) {
-           console.log(numeros2[10]);
-       } 
+        const numCheck = 8
 
-       //repetir hasta la posicion del array 19
+        function verificar (numero) {
+            if (numero % 2 === 0) {
+           console.log(`el numero ${numero} es par`)
+        } else console.log(`el numero ${numero} es impar`)
+        }
 
-       console.log(`De una lista de 20 numeros, se imprimiran solo los multiplos de 3 y 2:`)
+        verificar(numCheck)
 
-       if ( numeros2[0] % 3 === 0 && numeros2[0] %2 === 0) {
-           console.log(numeros2[0]);
-        } 
-       if ( numeros2[1] % 3 === 0 && numeros2[1] %2 === 0) {
-           console.log(numeros2[1]);
-        } 
-       if ( numeros2[2] % 3 === 0 && numeros2[2] %2 === 0) {
-           console.log(numeros2[2]);
-        } 
-       if ( numeros2[3] % 3 === 0 && numeros2[3] %2 === 0) {
-           console.log(numeros2[3]);
-        } 
-       if ( numeros2[4] % 3 === 0 && numeros2[4] %2 === 0) {
-           console.log(numeros2[4]);
-        } 
-       if ( numeros2[5] % 3 === 0 && numeros2[5] %2 === 0) {
-           console.log(numeros2[5]);
-        } 
-       if ( numeros2[6] % 3 === 0 && numeros2[6] %2 === 0) {
-           console.log(numeros2[6]);
-        } 
-       if ( numeros2[7] % 3 === 0 && numeros2[7] %2 === 0) {
-           console.log(numeros2[7]);
-        } 
-       if ( numeros2[8] % 3 === 0 && numeros2[8] %2 === 0) {
-           console.log(numeros2[8]);
-        } 
-       if ( numeros2[9] % 3 === 0 && numeros2[9] %2 === 0) {
-           console.log(numeros2[9]);
-        } 
-       if ( numeros2[10] % 3 === 0 && numeros2[10] %2 === 0) {
-           console.log(numeros2[10]);
-        } 
+        //Hacer una función que reciba como parámetro un número e 
+        //imprima VERDADERO si el número es múltiplo de 3 o 5   
+    
+        const numCheck2 = 12
 
-         //repetir hasta la posicion del array 19
->>>>>>> 995377ed6a3e1a18865cf340d592850ab7f754ee
+        function verificar2 (numeroMultiplo) {
+            if (numeroMultiplo % 3 === 0 || numeroMultiplo % 5 === 0) {
+           console.log(`Verdadero`)
+        } 
+        }
+
+        verificar2(numCheck2)
+
+        //Crear una función que reciba una variable donde se ingresa 
+        //el nombre del mes como string y devuelva la cantidad de días
+        //correspondiente a ese mes
+
+        const enero = 31
+        const febrero = 28
+        const marzo = 31
+        const abril = 30
+        const  mayo = 31
+        const junio = 30
+        const julio = 31
+        const agosto = 31
+        const septiembre = 30
+        const octubre = 31
+        const noviembre = 30
+        const diciembre = 31
+
+        function diasDelMes(mes) {
+            console.log(`El mes seleccionado tiene: ${mes} dias`)
+        }
+
+        diasDelMes(febrero)
+      
+
 
     </script>
 </body>
