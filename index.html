@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Primero</li>
-            <li>Segundo</li>
-            <li>Tercero</li>
-        </ul>
-        <span id="result"></span>
-    </nav>
-    <div>
-        <p id="firstp" class="p">Soy el primer parrafo</p>
-        <p class="p">Soy el segundo parrafo</p>
+    <div class="card">
+        <div class="containerImage">
+            <img id="imagen" 
+            src="https://images.freejpg.com.ar/900/1004/man-laptop-office-computer-working-typing-work-F100020544.jpg"  alt="Avatar" />
+        </div>
+        <p id="nombre">Hilario Rodriguez</p>
+        <p id="mail">@heavyzebra848</p>
+        <button id="boton">MEET HILARIO</button>
     </div>
-         <p class="p">Soy el tercer parrafo</p>
-
-    <span>solo soy un span</span>
     <script>
-        const liLength = document.getElementsByTagName("li").length
-        const result = document.getElementById("result")
-        result.innerHTML = `actualmente tenemos ${liLength} lis`
+        const button = document.getElementById("boton")
+        const card = document.getElementsByClassName("card")
+        const image = document.getElementsByTagName("img")
+
+        console.log(button)
+        console.log(card)
+        console.log(image)
+
     </script>
 </body>
 </html>
