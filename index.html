@@ -2,79 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+        </ul>
+        <span id="result"></span>
+    </nav>
+    <div>
+        <p id="firstp" class="p">Soy el primer parrafo</p>
+        <p class="p">Soy el segundo parrafo</p>
+    </div>
+         <p class="p">Soy el tercer parrafo</p>
+
+    <span>solo soy un span</span>
     <script>
-        //Ejercicios CourseIt
-        //Funciones
-
-        //Hacer una función que devuelva la suma de dos números
-
-
-        const num1= 15
-        const num2= 20
-
-        function sumarNumeros (suma) {
-            total = num1 + num2
-            console.log(total)
-        }
-
-        sumarNumeros(num1, num2)
-
-        //Hacer una función que reciba como parámetro un número
-        // e imprima si es par o impar
-
-        const numCheck = 8
-
-        function verificar (numero) {
-            if (numero % 2 === 0) {
-           console.log(`el numero ${numero} es par`)
-        } else console.log(`el numero ${numero} es impar`)
-        }
-
-        verificar(numCheck)
-
-        //Hacer una función que reciba como parámetro un número e 
-        //imprima VERDADERO si el número es múltiplo de 3 o 5   
-    
-        const numCheck2 = 12
-
-        function verificar2 (numeroMultiplo) {
-            if (numeroMultiplo % 3 === 0 || numeroMultiplo % 5 === 0) {
-           console.log(`Verdadero`)
-        } 
-        }
-
-        verificar2(numCheck2)
-
-        //Crear una función que reciba una variable donde se ingresa 
-        //el nombre del mes como string y devuelva la cantidad de días
-        //correspondiente a ese mes
-
-        const enero = 31
-        const febrero = 28
-        const marzo = 31
-        const abril = 30
-        const  mayo = 31
-        const junio = 30
-        const julio = 31
-        const agosto = 31
-        const septiembre = 30
-        const octubre = 31
-        const noviembre = 30
-        const diciembre = 31
-
-        function diasDelMes(mes) {
-            console.log(`El mes seleccionado tiene: ${mes} dias`)
-        }
-
-        diasDelMes(febrero)
-      
-
-
+        const liLength = document.getElementsByTagName("li").length
+        const result = document.getElementById("result")
+        result.innerHTML = `actualmente tenemos ${liLength} lis`
     </script>
 </body>
 </html>
