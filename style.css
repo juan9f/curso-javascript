@@ -1,46 +1,26 @@
-body {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(212, 212, 212);
-}
-.card {
+.container {
   width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  background-color: white;
+  height: 200px;
+  background-color: #00bacd;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: flex-end;
-  text-align: center;
-  margin: 10px;
 }
-#nombre {
-  font-size: 30px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
-  margin: 0px;
-}
-
-#mail {
-  color: rgb(175, 175, 175);
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
-
-#boton {
-  color: white;
-  background-color: #0096fc;
-  padding: 20px;
-  font-size: 15px;
-  font-weight: bold;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+#searchU {
+  margin-top: 50px;
+  width: 90%;
+  border-radius: 4px;
   border: none;
+  padding: 10px;
 }
-
-#imagen {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
+#Boton {
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  color: #034b53;
+  font-weight: bold;
+  background-color: #5fddeb;
+  cursor: pointer;
 }

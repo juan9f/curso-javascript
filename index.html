@@ -7,24 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="card">
-        <div class="containerImage">
-            <img id="imagen" 
-            src="https://images.freejpg.com.ar/900/1004/man-laptop-office-computer-working-typing-work-F100020544.jpg"  alt="Avatar" />
-        </div>
-        <p id="nombre">Hilario Rodriguez</p>
-        <p id="mail">@heavyzebra848</p>
-        <button id="boton">MEET HILARIO</button>
-    </div>
-    <script>
-        const button = document.getElementById("boton")
-        const card = document.getElementsByClassName("card")
-        const image = document.getElementsByTagName("img")
+<div class="container"> 
+    <input onkeypress="enviarDatos(event);" type="search" id="searchU" name="searchU" placeholder="type username..."><br>
+    <button type="submit" id="Boton"> Buscar Usuario </button> 
+</div>
 
-        console.log(button)
-        console.log(card)
-        console.log(image)
-
-    </script>
+<script>
+    
+        function enviarDatos(e) {
+            if (e.key === "+" ) {
+            console.log(e.target.value)
+    }
+}
+    
+</script>
 </body>
 </html>
