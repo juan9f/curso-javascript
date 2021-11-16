@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-<div class="container"> 
-    <input onkeypress="enviarDatos(event);" type="search" id="searchU" name="searchU" placeholder="type username..."><br>
-    <button type="submit" id="Boton"> Buscar Usuario </button> 
-</div>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        onkeypress="enviarDatos(event);"
+        type="search"
+        id="searchU"
+        name="searchU"
+        placeholder="type username..."
+      /><br />
+      <button type="submit" id="Boton">Buscar Usuario</button>
+    </div>
+    <div>
+      <ul id="list"></ul>
+    </div>
+    <script>
+      function addItem() {
+        const taskValue = document.getElementById("searchU").value;
+        addElementToDOM("li", taskValue, "list");
+        document.getElementById("searchU").value = "";
+      }
 
-<script>
-    
-        function enviarDatos(e) {
-            if (e.key === "+" ) {
-            console.log(e.target.value)
-    }
-}
-    
-</script>
-</body>
+      function addElementToDOM(type, content, parentId) {
+        const parent = document.getElementById(parentId);
+        const elem = document.createElement(type);
+        const text = document.createTextNode(content);
+
+        elem.appendChild(text);
+        parent.appendChild(elem);
+      }
+
+      function enviarDatos(e) {
+        if (e.key === "+" || e.key === "Enter") {
+          addItem();
+        }
+      }
+    </script>
+  </body>
 </html>
