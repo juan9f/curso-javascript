@@ -7,40 +7,29 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <input
-        onkeypress="enviarDatos(event);"
-        type="search"
-        id="searchU"
-        name="searchU"
-        placeholder="type username..."
-      /><br />
-      <button type="submit" id="Boton">Buscar Usuario</button>
-    </div>
     <div>
-      <ul id="list"></ul>
+      <label>Nombre: </label><span id="name"></span><br />
+      <label>Empresa: </label><span id="company"></span><br />
+      <label>Bio: </label><span id="bio"></span><br />
+      <label>Status: </label><span id="status"></span><br />
     </div>
+    <input type="text" id="user" />
+    <button onclick="fetchData()">buscar</button>
     <script>
-      function addItem() {
-        const taskValue = document.getElementById("searchU").value;
-        addElementToDOM("li", taskValue, "list");
-        document.getElementById("searchU").value = "";
-      }
+      async function fetchData() {
+        const inputValue = document.getElementById("user").value;
+        const data = await fetch(`https://api.github.com/users/${inputValue}`);
+        const json = await data.json();
 
-      function addElementToDOM(type, content, parentId) {
-        const parent = document.getElementById(parentId);
-        const elem = document.createElement(type);
-        const text = document.createTextNode(content);
-
-        elem.appendChild(text);
-        parent.appendChild(elem);
-      }
-
-      function enviarDatos(e) {
-        if (e.key === "+" || e.key === "Enter") {
-          addItem();
+        console.log(data);
+        if (data.status == 200) {
+          document.getElementById("name").innerText = json.name;
+          document.getElementById("company").innerText = json.company;
+          document.getElementById("bio").innerText = json.bio;
         }
+        document.getElementById("status").innerText = data.status;
       }
+      // fetchData();
     </script>
   </body>
 </html>
